@@ -275,7 +275,6 @@
         }
         return prevVal;
       }).amount;
-      console.log('highestExpense', highestExpense);
  
       // Calculate heights in % of the highest bar
       // and add values to the boxes on top of the bars
@@ -289,7 +288,7 @@
         // add text to box
         boxes[day].insertAdjacentText('beforeend', `$${amount}`);
       }
-      console.log(heights);
+      
       const chartBars = document.querySelectorAll('li.dayContainer .chartBar');
 
       // The highest bar in the chart will be 9rem high
