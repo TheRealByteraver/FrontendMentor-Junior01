@@ -147,7 +147,7 @@
       justify-content: space-between;
     }
 
-    .summary h3 {
+    .summary h2 {
       color: hsl(28, 10%, 53%);
       margin: 0;
       font-weight: 400;
@@ -194,14 +194,14 @@
 <body>
 
   <div class="mainContainer">
-    <section class="container header">
+    <header class="container header" role="banner">
       <div class="headerTextContainer">
         <h2>My balance</h2>
         <p>$921.48</p>
       </div>
       <img src="./images/logo.svg" alt="logo" class="logo">     
-    </section>
-    <section class="container chart">
+    </header>
+    <main class="container chart" role="main">
       <h1>Spending - Last 7 days</h1>
 
       <ul class="dayList">
@@ -241,22 +241,21 @@
           <div class="day">sun</div>
         </li>  
       </ul>
-
       <hr>
-      <div class="summary">
+      <footer class="summary">
         <div class="summary-left">
-          <h3 class="summary-total-header">Total this month</h3>
+          <h2 class="summary-total-header">Total this month</h3>
           <p class="summary-total-amount">$478.33</p>
         </div>
         <div class="summary-right">
-          <h3 class="variance-header">from last month</h3>
+          <h2 class="variance-header">from last month</h3>
           <p class="variance">+2.4%</p>
         </div>
-      </div>
-    </section>
+      </footer>
+    </main>
   </div>
   
-  <div class="attribution">
+  <div class="attribution"  role="contentinfo">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Erland Van Olmen</a>.
   </div>
